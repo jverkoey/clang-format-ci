@@ -100,6 +100,7 @@ EOL
 
 delete_comment() {
   pushd "$DIR/github-comment" >> /dev/null
+  pwd
   # No recommended changes, so delete any existing comment
   swift run github-comment \
     --repo="$REPO" \
